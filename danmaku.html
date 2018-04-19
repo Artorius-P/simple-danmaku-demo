@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<style>
+    .buttons {
+	    text-align: center;
+    }
+    .contentbox {
+        margin: 0 auto;
+	    margin-top: 20px;
+	    width: 85%;
+	    height: 400px;
+	    border: 1px solid #e5e5e5;
+	    overflow: hidden;
+    }
+    button {
+        background-color: #fff;
+        width: 150px;
+	    height: 32px;
+    }
+    button.clear{
+        border-color: rgb(76, 130, 247);
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 2px;
+    }
+    button.shoot{
+        border-color: rgb(243, 141, 46);
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 2px;
+    }
+
+    input {
+	    display: block;
+	    width: 30%;
+	    height: 32px;
+	    margin: 10px auto;
+	    border: 1px solid #ddd;
+	    border-radius: 2px;
+    }
+
+</style>
+<script type="text/javascript" src="jquery-2.0.0.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<html lang="en">
+        <head>
+            <title>danmaku</title>
+            <meta charset="utf-8">
+        </head>
+        <body>
+            <div id="barrage" class="barrage">
+            <div class="contentbox" id="contentbox" style="position: relative;"></div>
+                <div class="buttons">
+                    <input type="text" name="saysomething" placeholder="说点什么？" id="saysomething">
+                    <button class="shoot">发 射</button>
+                    <button class="clear">清 屏</button>
+                </div>
+            </div>
+        </body>
+</html>
